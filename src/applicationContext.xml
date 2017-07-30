@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+
+    <!--<bean id="jdbcTemplate" class="com.spring.jdbc.JdbcTemplate" scope="singleton">-->
+    <!--</bean>-->
+
+    <component-scan base-package="cn.test"/>
+
+    <bean id="handlerView" class="com.spring.mvc.handler.HandlerView">
+        <!--视图名称前缀-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--视图名称后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+</beans>
